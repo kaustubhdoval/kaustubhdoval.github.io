@@ -1,0 +1,110 @@
+@import "../../vars.css";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+  margin-right: 12%;
+  margin-left: 12%;
+  padding-bottom: 120px;
+}
+
+.title {
+  font-size: 42px;
+  margin-bottom: 18px;
+}
+
+.bigboy {
+  transition: background-color 0.3s ease;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.name {
+  font-size: 38px;
+  font-weight: 300;
+}
+
+.right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.description {
+  font-size: 16px;
+}
+
+.btn {
+  font-size: 18px;
+  padding: 6px;
+  border-radius: 8%;
+  background-color: var(--color-trans);
+  width: min-content;
+  white-space: nowrap;
+  margin-top: 10px;
+  text-decoration: none;
+  /**/
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 2px;
+  right: -20px;
+  scale: 1.7;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  padding-right: 24px;
+  padding-left: 8px;
+}
+
+.btn:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+.hoverColor:hover {
+  background-color: var(--hover-color);
+}
+
+@media screen and (max-width: 1200px) {
+  .bigboy {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .hoverColor {
+    background-color: var(--color-trans);
+  }
+
+  .right {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .name {
+    font-size: 28px;
+  }
+
+  .btn {
+    font-size: 22px;
+    background-color: var(--hover-color);
+  }
+}

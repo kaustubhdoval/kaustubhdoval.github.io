@@ -1,0 +1,11 @@
+:root {
+  /* Colors */
+  --color-text: #f7f2de;
+  --color-grad1: #000000;
+  --color-grad2: #0e0b04;
+  --color-glow: #ffbf00;
+  --color-trans: #201909;
+
+  /* Fonts */
+  --font-inter: "inter";
+}

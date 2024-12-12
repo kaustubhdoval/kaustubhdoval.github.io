@@ -1,0 +1,90 @@
+@import "../../vars.css";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+  margin-right: 12%;
+  margin-left: 12%;
+  padding-bottom: 120px;
+}
+
+.title {
+  font-size: 42px;
+  margin-bottom: 18px;
+}
+
+.biggerFish {
+  text-decoration: none;
+}
+
+.bigboy {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-radius: 14px;
+}
+
+.left {
+  width: 65%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 5%;
+}
+
+.right {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 20%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.role {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.company {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.location,
+.duration {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.location {
+  font-size: 24px;
+}
+
+.bigboy:hover {
+  background-color: var(--color-trans);
+  transition: 0.4s ease-in-out;
+}
+
+@media screen and (max-width: 900px) {
+  .right {
+    display: None;
+  }
+
+  .left {
+    width: 100%;
+  }
+}

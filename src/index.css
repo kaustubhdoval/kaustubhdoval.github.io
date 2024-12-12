@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", Arial, Helvetica, sans-serif;
+  color: var(--color-text);
+  scroll-behavior: smooth;
+}
+
+.glow-cursor {
+  position: fixed;
+  width: 150px;
+  height: 150px;
+  background: #ffbf00;
+  opacity: 0.8;
+  border-radius: 50%;
+  filter: blur(100px);
+  pointer-events: none;
+}
