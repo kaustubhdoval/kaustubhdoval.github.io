@@ -27,16 +27,18 @@
   list-style: none;
 }
 
-.menuItems a {
+.navButton {
   font-size: 1.2rem;
   text-decoration: none;
   color: var(--color-text);
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
   /**/
   display: inline-block;
   position: relative;
 }
 
-.menuItems a::after {
+.navButton::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -48,15 +50,15 @@
   transition: transform 0.25s ease-out;
 }
 
-.menuItems a:hover::after {
+.navButton:hover::after {
   transform: scaleX(1);
 }
 
-.menuItems a::after {
+.navButton::after {
   transform-origin: bottom right;
 }
 
-.menuItems a:hover::after {
+.navButton:hover::after {
   transform-origin: bottom left;
 }
 

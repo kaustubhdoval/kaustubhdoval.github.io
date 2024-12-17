@@ -1,13 +1,18 @@
 import React from "react";
 import styles from "./Projects.module.css";
 
+import { useNavigate } from "react-router-dom";
+
 const ProjectColumn = ({
   projectName,
   description,
   btnName,
   btnLink,
   color,
+  inWebsite = false,
 }) => {
+  const navigate = useNavigate();
+
   return (
     <div
       className={`${styles.bigboy} ${styles.hoverColor}`}
@@ -16,7 +21,17 @@ const ProjectColumn = ({
       <h1 className={styles.name}>{projectName}</h1>
       <div className={styles.right}>
         <p className={styles.description}>{description}</p>
-        <a href={btnLink} target="_blank" className={styles.btn}>
+        <a
+          onClick={(e) => {
+            if (inWebsite) {
+              e.preventDefault();
+              navigate("/projects/" + btnLink);
+            }
+          }}
+          href={!inWebsite ? btnLink : undefined}
+          target={!inWebsite ? "_blank" : undefined}
+          className={styles.btn}
+        >
           {btnName}
         </a>
       </div>
