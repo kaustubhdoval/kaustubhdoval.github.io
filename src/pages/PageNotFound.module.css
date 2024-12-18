@@ -1,0 +1,36 @@
+@import "../vars.css";
+
+.App {
+  background: linear-gradient(135deg, var(--color-grad2), var(--color-grad1));
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 80%;
+  margin-left: 10%;
+  margin-top: 60px;
+  margin-bottom: 90px;
+  min-height: 60vh;
+}
+
+.container img {
+  max-width: 40%;
+  max-height: auto;
+  border-radius: 5px;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.caption {
+  text-align: center;
+  font-weight: 300;
+}
