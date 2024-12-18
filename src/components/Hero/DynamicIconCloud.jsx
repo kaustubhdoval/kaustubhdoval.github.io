@@ -42,6 +42,9 @@ const slugs = [
   "css3",
   "arm",
   "git",
+  "espressif",
+  "ifttt",
+  "ltspice",
 ];
 
 const DynamicIconCloud = () => {

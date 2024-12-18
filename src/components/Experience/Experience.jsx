@@ -3,13 +3,15 @@ import React from "react";
 import styles from "./Experience.module.css";
 import ExperienceColumn from "./ExperienceColumn";
 
+import { getImageUrl } from "../../utils";
+
 export const Experience = () => {
   return (
     <section className={styles.container} id="experience">
       <h1 className={styles.title}>Experience</h1>
       <ExperienceColumn
         href="https://www.lntecc.com"
-        imgPath="../../assets/logos/lnt.png"
+        imgPath={getImageUrl("logos/lnt.png")}
         company="Larsen and Toubro"
         role="Signalling & Telecom Intern"
         location="Faridabad, India"
@@ -18,7 +20,7 @@ export const Experience = () => {
 
       <ExperienceColumn
         href="https://www.uwarg.com"
-        imgPath="../../assets/logos/warg.jpeg"
+        imgPath={getImageUrl("logos/warg.jpeg")}
         company="Waterloo Aerial Robotics Group"
         role="Electrical Subteam Member"
         location="Waterloo, ON"
@@ -27,7 +29,7 @@ export const Experience = () => {
 
       <ExperienceColumn
         href="https://uwaterloo.ca"
-        imgPath="../../assets/logos/uwaterloo.png"
+        imgPath={getImageUrl("logos/uwaterloo.png")}
         company="University of Waterloo"
         role="Project Intern"
         location="Remote"

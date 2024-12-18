@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { Navbar } from "../../components/Navbar/Navbar";
 import { Footer } from "../../components/Footer/Footer";
 
+import { getImageUrl } from "../../utils";
+
 import styles from "./projectPages.module.css";
 
 export const SpotifyPlayer = () => {
@@ -26,7 +28,12 @@ export const SpotifyPlayer = () => {
           <li>Rotary Encoder to change Volume</li>
           <li>Buttons to change tracks and play/pause the music</li>
           <br />
-          TODO: Add schematic and images
+          <img
+            className={styles.imageFr}
+            src={getImageUrl("projectAssets/spotify.jpg")}
+            alt=""
+          />
+          <h3 className={styles.caption}> Project built on a protoboard </h3>
           <br /> <br />
           <a
             href="https://github.com/kaustubhdoval/ESP-Spotify-Player"

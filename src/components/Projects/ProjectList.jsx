@@ -32,30 +32,24 @@ export const Projects = ({ header = "Projects", onlyFavs = true }) => {
         inWebsite="true"
       ></ProjectColumn>
       <ProjectColumn
-        projectName="Motorized Roller Blinds"
-        description="An Arduino based Motorized Roller Blinds system consisting of a Stepper Motor and Infrared Remote"
-        btnName="Learn More"
-        btnLink="rolling-blinds"
-        color="#880718"
-        inWebsite="true"
-      ></ProjectColumn>
-      <ProjectColumn
         projectName="Portfolio Website"
         description="This very website! made from scratch using ReactJS"
         btnName="Github"
-        btnLink="https://github.com/kaustubhdoval/react-portfolio"
+        btnLink="https://github.com/kaustubhdoval/kaustubhdoval.github.io"
         color="#571367"
       ></ProjectColumn>
       {/* FOR NON FAVOURITE PROJECTS - TO BE ONLY DISPLAYED ON /projects page */}
       {!onlyFavs && (
-        <ProjectColumn
-          projectName="Testing"
-          description="Testing for realsies"
-          btnName="Hope
-        this works"
-          btnLink="test"
-          color="#ffffff"
-        ></ProjectColumn>
+        <>
+          <ProjectColumn
+            projectName="Motorized Roller Blinds"
+            description="An Arduino based Motorized Roller Blinds system consisting of a Stepper Motor and Infrared Remote"
+            btnName="Learn More"
+            btnLink="rolling-blinds"
+            color="#880718"
+            inWebsite="true"
+          ></ProjectColumn>
+        </>
       )}
     </section>
   );

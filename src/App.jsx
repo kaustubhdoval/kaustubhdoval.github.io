@@ -12,7 +12,7 @@ import { SpotifyPlayer } from "./pages/projectPages/spotifyplayer";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/">
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/projects" element={<ProjectPage />} />

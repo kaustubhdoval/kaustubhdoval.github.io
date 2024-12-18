@@ -15,9 +15,17 @@ export const RollingBlinds = () => {
         <h1 className={styles.name}>Motorized Rolling Blinds</h1>
         <p className={styles.description}>
           Designed and implemented a Arduino based Motorized Rolling Blinds
-          system consisting of a Stepper Motor and Infrared remote. <br />
-          <br /> TODO: Github Link <br />
-          TODO: Add images{" "}
+          system consisting of a Stepper Motor and Infrared remote.
+          <br /> <br />
+          TODO: Add images <br /> <br />
+          <a href="#" target="_blank" className={styles.githubBtn}>
+            <img
+              height="24"
+              width="24"
+              src="https://cdn.simpleicons.org/github/white"
+            />
+            Github
+          </a>
         </p>
         <button
           onClick={() => {
