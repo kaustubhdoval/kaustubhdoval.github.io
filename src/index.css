@@ -19,3 +19,8 @@
   filter: blur(100px);
   pointer-events: none;
 }
+
+/*Scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}

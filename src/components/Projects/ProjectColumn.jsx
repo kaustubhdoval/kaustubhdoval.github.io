@@ -11,7 +11,14 @@ const ProjectColumn = ({
   color,
   inWebsite = false,
 }) => {
-  const navigate = useNavigate();
+  const handleNavigation = useNavigate();
+
+  const handleClick = (e) => {
+    if (inWebsite) {
+      e.preventDefault();
+      handleNavigation("/projects/" + btnLink);
+    }
+  };
 
   return (
     <div
@@ -22,12 +29,7 @@ const ProjectColumn = ({
       <div className={styles.right}>
         <p className={styles.description}>{description}</p>
         <a
-          onClick={(e) => {
-            if (inWebsite) {
-              e.preventDefault();
-              navigate("/projects/" + btnLink);
-            }
-          }}
+          onClick={handleClick}
           href={!inWebsite ? btnLink : undefined}
           target={!inWebsite ? "_blank" : undefined}
           className={styles.btn}

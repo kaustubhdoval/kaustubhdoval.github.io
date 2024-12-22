@@ -9,14 +9,14 @@ export const Navbar = () => {
   const location = useLocation();
 
   const handleNavigation = (section) => {
-    // Close mobile menu
     setMenuOpen(false);
-
-    // If not on home page, navigate to home first
+    // If not on home page
     if (location.pathname !== "/") {
-      navigate("/", { state: { scrollTo: section } });
+      navigate("/");
+      handleNavigation(section);
     } else {
-      // If already on home page, scroll to section
+      // If already on home page, just scroll
+      window.location.hash = section;
       const element = document.getElementById(section);
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
