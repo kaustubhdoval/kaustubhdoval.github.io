@@ -18,14 +18,14 @@ export const Experience = () => {
         duration="Oct 2024 - Dec 2024"
       ></ExperienceColumn>
 
-      <ExperienceColumn
+      {/* <ExperienceColumn
         href="https://www.uwarg.com"
         imgPath={getImageUrl("logos/warg.jpeg")}
         company="Waterloo Aerial Robotics Group"
         role="Electrical Subteam Member"
         location="Waterloo, ON"
         duration="Jan 2024 - Present"
-      ></ExperienceColumn>
+      ></ExperienceColumn> */}
 
       <ExperienceColumn
         href="https://uwaterloo.ca"
@@ -34,6 +34,15 @@ export const Experience = () => {
         role="Project Intern"
         location="Remote"
         duration="Jan 2024 - Apr 2024"
+      ></ExperienceColumn>
+
+      <ExperienceColumn
+        href="https://www.grantthornton.in"
+        imgPath={getImageUrl("logos/gt.jpg")}
+        company="Grant Thornton Bharat LLP"
+        role="Research Intern"
+        location="Gurugram, India"
+        duration="Jun 2022 - Jun 2022"
       ></ExperienceColumn>
     </section>
   );

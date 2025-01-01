@@ -43,14 +43,13 @@
 
 .btn {
   font-size: 18px;
-  padding: 6px;
-  border-radius: 8%;
+  padding: 6px 12px 6px 12px;
+  border-radius: 6px;
   background-color: var(--color-trans);
   width: min-content;
   white-space: nowrap;
   margin-top: 10px;
   text-decoration: none;
-  /**/
   cursor: pointer;
   display: inline-block;
   position: relative;
@@ -61,15 +60,15 @@
   content: "»";
   position: absolute;
   opacity: 0;
-  top: 2px;
+  top: 1.8px;
   right: -20px;
-  scale: 1.7;
+  scale: 1.8;
   transition: 0.5s;
 }
 
 .btn:hover {
-  padding-right: 24px;
-  padding-left: 8px;
+  padding-right: 26px;
+  padding-left: 10px;
 }
 
 .btn:hover:after {

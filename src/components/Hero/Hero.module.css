@@ -37,9 +37,13 @@
   gap: 35px;
 }
 
+.contact a {
+  display: inline-block;
+  transition: transform 0.25s ease-in-out;
+}
+
 .contact a:hover {
-  scale: 1.3;
-  transition: 0.2s ease-in-out;
+  transform: scale(1.25);
 }
 
 @media screen and (max-width: 900px) {
