@@ -79,6 +79,17 @@
   transition: 0.4s ease-in-out;
 }
 
+.hidden {
+  opacity: 0;
+  filter: blur(2px);
+  transition: all 1.5s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+}
+
 @media screen and (max-width: 900px) {
   .right {
     display: None;

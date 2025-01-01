@@ -1,13 +1,27 @@
-import React from "react";
-import "animate.css";
+import React, { useEffect } from "react";
 import styles from "./About.module.css";
 
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add(styles.show);
+    } else {
+      entry.target.classList.remove(styles.show);
+    }
+  });
+});
+
 export const About = () => {
+  useEffect(() => {
+    const hiddenElements = document.querySelectorAll(`.${styles.hidden}`);
+    hiddenElements.forEach((el) => observer.observe(el));
+
+    // Cleanup the observer on unmount
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section
-      className={`animate__animated animate__fadeIn ${styles.container}`}
-      id="about"
-    >
+    <section className={`${styles.hidden} ${styles.container}`} id="about">
       <h1 className={styles.title}>About</h1>
       <p className={styles.content}>
         Welcome to my portfolio! My name is Kaustubh Doval, I am an Electrical

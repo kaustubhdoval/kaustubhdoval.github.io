@@ -1,5 +1,7 @@
 import React from "react";
 
+import "animate.css";
+
 import DynamicIconCloud from "./DynamicIconCloud";
 import styles from "./Hero.module.css";
 
@@ -7,14 +9,24 @@ export const Hero = () => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-        <p className={styles.description}>Hello There 👋 </p>
-        <h1 className={styles.title}>
+        <p
+          className={`animate__animated animate__fadeIn animate__faster	 ${styles.description}`}
+        >
+          Hello There 👋{" "}
+        </p>
+        <h1
+          className={`animate__animated animate__fadeIn animate__fast ${styles.title}`}
+        >
           I'm <b>Kaustubh</b>
         </h1>
-        <p className={styles.description}>
+        <p
+          className={`animate__animated animate__fadeIn animate__delay-1s ${styles.description}`}
+        >
           ECE Student at the University of Waterloo
         </p>
-        <div className={styles.contact}>
+        <div
+          className={`animate__animated animate__fadeInLeft animate__delay-1s ${styles.contact}`}
+        >
           <a href="https://www.linkedin.com/in/kaustubhdoval/" target="_blank">
             <img
               height="28"

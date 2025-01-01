@@ -1,13 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import styles from "./Experience.module.css";
 import ExperienceColumn from "./ExperienceColumn";
 
 import { getImageUrl } from "../../utils";
 
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add(styles.show);
+    } else {
+      entry.target.classList.remove(styles.show);
+    }
+  });
+});
+
 export const Experience = () => {
+  useEffect(() => {
+    const hiddenElements = document.querySelectorAll(`.${styles.hidden}`);
+    hiddenElements.forEach((el) => observer.observe(el));
+
+    // Cleanup the observer on unmount
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section className={styles.container} id="experience">
+    <section className={`${styles.hidden} ${styles.container}`} id="experience">
       <h1 className={styles.title}>Experience</h1>
       <ExperienceColumn
         href="https://www.lntecc.com"
