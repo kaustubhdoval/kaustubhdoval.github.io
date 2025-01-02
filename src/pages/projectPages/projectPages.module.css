@@ -44,6 +44,12 @@
   font-style: italic;
 }
 
+.description iframe {
+  max-width: 80%;
+  max-height: 70vh;
+  margin-left: 10%;
+}
+
 .githubBtn {
   width: min-content;
   background-color: var(--color-trans);

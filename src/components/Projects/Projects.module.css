@@ -104,7 +104,18 @@
   }
 
   .btn {
+    margin-top: 1.3rem;
     font-size: 22px;
     background-color: var(--hover-color);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .name {
+    font-size: 24px;
+  }
+
+  .title {
+    font-size: 38px;
   }
 }

@@ -33,7 +33,7 @@ export const Projects = ({ header = "Projects", onlyFavs = true }) => {
       ></ProjectColumn>
       <ProjectColumn
         projectName="Portfolio Website"
-        description="This very website! made from scratch using ReactJS"
+        description="This very website! made from scratch using ReactJS, HTML and CSS"
         btnName="Github"
         btnLink="https://github.com/kaustubhdoval/kaustubhdoval.github.io"
         color="#571367"
@@ -41,6 +41,14 @@ export const Projects = ({ header = "Projects", onlyFavs = true }) => {
       {/* FOR NON FAVOURITE PROJECTS - TO BE ONLY DISPLAYED ON /projects page */}
       {!onlyFavs && (
         <>
+          <ProjectColumn
+            projectName="Voltage Regulator"
+            description="Designed a Low Droupout Voltage Regulator using Altium Designer"
+            btnName="Learn More"
+            btnLink="voltage-regulator"
+            color="#E4A03A"
+            inWebsite="true"
+          ></ProjectColumn>
           <ProjectColumn
             projectName="Motorized Roller Blinds"
             description="An Arduino based Motorized Roller Blinds system consisting of a Stepper Motor and Infrared Remote"

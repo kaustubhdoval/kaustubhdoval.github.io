@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Navbar } from "../../components/Navbar/Navbar";
 import { Footer } from "../../components/Footer/Footer";
 
+import { getImageUrl } from "../../utils";
 import styles from "./projectPages.module.css";
 
 export const template = () => {

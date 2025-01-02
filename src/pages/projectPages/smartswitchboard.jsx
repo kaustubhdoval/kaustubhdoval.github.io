@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Navbar } from "../../components/Navbar/Navbar";
 import { Footer } from "../../components/Footer/Footer";
 
+import { getImageUrl } from "../../utils";
 import styles from "./projectPages.module.css";
 
 export const SmartSwitchBoard = () => {
@@ -29,7 +30,19 @@ export const SmartSwitchBoard = () => {
             <li>Temperature Sensor (DHT22)</li>
           </ul>
           <br />
-          <br /> TODO: Embed of PCB Design
+          <img
+            className={styles.imageFr}
+            src={getImageUrl("projectAssets/switch-3d.png")}
+            alt=""
+          />
+          <h3 className={styles.caption}> CAD Visualization </h3>
+          <br />
+          <img
+            className={styles.imageFr}
+            src={getImageUrl("projectAssets/switch-pcb.png")}
+            alt=""
+          />
+          <h3 className={styles.caption}> PCB Design of the Board </h3>
         </p>
         <button
           onClick={() => {

@@ -98,4 +98,8 @@
   .left {
     width: 100%;
   }
+
+  .title {
+    font-size: 38px;
+  }
 }

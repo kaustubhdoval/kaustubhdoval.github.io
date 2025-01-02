@@ -15,6 +15,7 @@ import { WaterTester } from "./pages/projectPages/watertester";
 import { SmartSwitchBoard } from "./pages/projectPages/smartswitchboard";
 import { RollingBlinds } from "./pages/projectPages/rollingblinds";
 import { SpotifyPlayer } from "./pages/projectPages/spotifyplayer";
+import { Ldo } from "./pages/projectPages/ldo";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -43,6 +44,7 @@ function App() {
           path="/projects/spotify-controller"
           element={<SpotifyPlayer />}
         ></Route>
+        <Route path="/projects/voltage-regulator" element={<Ldo />}></Route>
         <Route path="*" element={<PageNotFound />}></Route>
       </Routes>
     </Router>
