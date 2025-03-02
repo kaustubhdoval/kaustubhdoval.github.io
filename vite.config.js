@@ -10,4 +10,7 @@ export default defineConfig({
       localsConvention: "camelCase",
     },
   },
+  server: {
+    historyApiFallback: true,
+  },
 });
