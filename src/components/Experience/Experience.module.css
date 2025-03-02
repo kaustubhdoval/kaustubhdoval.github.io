@@ -95,6 +95,11 @@
     display: None;
   }
 
+  .bigboy {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .left {
     width: 100%;
   }

@@ -5,7 +5,7 @@ import styles from "./Footer.module.css";
 export const Footer = () => {
   return (
     <section className={styles.container}>
-      <h1 className={styles.credit}>Kaustubh Doval © 2024</h1>
+      <h1 className={styles.credit}>Kaustubh Doval © 2025</h1>
       <div className={styles.social}>
         <a href="https://www.linkedin.com/in/kaustubhdoval/" target="_blank">
           <img

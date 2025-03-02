@@ -1,9 +1,13 @@
 import React from "react";
 
+import { useNavigate } from "react-router-dom";
+
 import ProjectColumn from "./ProjectColumn";
 import styles from "./Projects.module.css";
 
 export const Projects = ({ header = "Projects", onlyFavs = true }) => {
+  const navigate = useNavigate();
+
   return (
     <section className={styles.container} id="projects">
       <h1 className={styles.title}>{header}</h1>
@@ -58,6 +62,20 @@ export const Projects = ({ header = "Projects", onlyFavs = true }) => {
             inWebsite="true"
           ></ProjectColumn>
         </>
+      )}
+      {onlyFavs && (
+        //Button to redirect to /projects page
+        <div className={styles.btnContainer}>
+          <button
+            onClick={() => {
+              navigate("/projects");
+            }}
+            className={styles.allBtn}
+            role="button"
+          >
+            All Projects
+          </button>
+        </div>
       )}
     </section>
   );
