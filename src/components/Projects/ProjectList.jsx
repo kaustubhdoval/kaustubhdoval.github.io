@@ -20,6 +20,14 @@ export const Projects = ({ header = "Projects", onlyFavs = true }) => {
         inWebsite="true"
       ></ProjectColumn>
       <ProjectColumn
+        projectName="Posture Buddy"
+        description="Real time Posture Analysis using Python, OpenCV and MediaPipe"
+        btnName="Learn More"
+        btnLink="posture-buddy"
+        color="#571367"
+        inWebsite="true"
+      ></ProjectColumn>
+      <ProjectColumn
         projectName="Water Quality Tester"
         description="An STM32 based device that utilizes three types of Sensors to evaluate water quality"
         btnName="Learn More"
@@ -35,16 +43,16 @@ export const Projects = ({ header = "Projects", onlyFavs = true }) => {
         color="#4B3047"
         inWebsite="true"
       ></ProjectColumn>
-      <ProjectColumn
-        projectName="Portfolio Website"
-        description="This very website! made from scratch using ReactJS, HTML and CSS"
-        btnName="Github"
-        btnLink="https://github.com/kaustubhdoval/kaustubhdoval.github.io"
-        color="#571367"
-      ></ProjectColumn>
       {/* FOR NON FAVOURITE PROJECTS - TO BE ONLY DISPLAYED ON /projects page */}
       {!onlyFavs && (
         <>
+          <ProjectColumn
+            projectName="Portfolio Website"
+            description="This very website! made from scratch using ReactJS, HTML and CSS"
+            btnName="Github"
+            btnLink="https://github.com/kaustubhdoval/kaustubhdoval.github.io"
+            color="#571367"
+          ></ProjectColumn>
           <ProjectColumn
             projectName="Voltage Regulator"
             description="Designed a Low Droupout Voltage Regulator using Altium Designer"

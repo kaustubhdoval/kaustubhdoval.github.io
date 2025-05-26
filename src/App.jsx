@@ -16,6 +16,7 @@ import { SmartSwitchBoard } from "./pages/projectPages/smartswitchboard";
 import { RollingBlinds } from "./pages/projectPages/rollingblinds";
 import { SpotifyPlayer } from "./pages/projectPages/spotifyplayer";
 import { Ldo } from "./pages/projectPages/ldo";
+import { PostureBuddy } from "./pages/projectPages/posturebuddy";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -45,6 +46,9 @@ function App() {
           element={<SpotifyPlayer />}
         ></Route>
         <Route path="/projects/voltage-regulator" element={<Ldo />}></Route>
+        <Route path="/projects/posture-buddy" element={<PostureBuddy />} />
+
+        {/* Catch-all route for 404 */}
         <Route path="*" element={<PageNotFound />}></Route>
       </Routes>
     </Router>

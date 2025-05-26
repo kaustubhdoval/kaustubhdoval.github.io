@@ -31,7 +31,7 @@ export const Hero = () => {
             <img
               height="28"
               width="28"
-              src="https://cdn.simpleicons.org/linkedin/white"
+              src="https://cdn.simpleicons.org/logmein/white"
             />
           </a>
           <a href="https://github.com/kaustubhdoval" target="_blank">
