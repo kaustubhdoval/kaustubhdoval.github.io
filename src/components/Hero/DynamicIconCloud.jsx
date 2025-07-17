@@ -13,6 +13,9 @@ const useIcons = (slugs) => {
       renderSimpleIcon({
         icon,
         size: 50,
+        bgHex: "#000",
+        fallbackHex: "#fff",
+        minContrastRatio: 1,
         aProps: {
           onClick: (e) => e.preventDefault(),
         },
@@ -30,9 +33,7 @@ const slugs = [
   "react",
   "stmicroelectronics",
   "arduino",
-  "visualstudiocode",
   "mysql",
-  "jekyll",
   "figma",
   "dassaultsystemes",
   "autocad",
@@ -45,6 +46,8 @@ const slugs = [
   "espressif",
   "ifttt",
   "ltspice",
+  "opencv",
+  "raspberrypi",
 ];
 
 const DynamicIconCloud = () => {
