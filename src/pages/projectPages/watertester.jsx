@@ -23,7 +23,7 @@ export const WaterTester = () => {
           sample.
           <img
             className={styles.imageFr}
-            src={getImageUrl("projectAssets/water-schematic.png")}
+            src={getImageUrl("projectAssets/water-schematic.webp")}
             alt=""
           />
           <h3 className={styles.caption}> Circuit Schematic </h3>

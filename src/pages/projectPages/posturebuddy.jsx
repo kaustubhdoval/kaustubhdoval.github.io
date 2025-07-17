@@ -30,7 +30,7 @@ export const PostureBuddy = () => {
           <br />
           <img
             className={styles.imageFr}
-            src={getImageUrl("projectAssets/posture-pi.jpg")}
+            src={getImageUrl("projectAssets/posture-pi.webp")}
             alt=""
           />
           <h3 className={styles.caption}> Raspberry Pi + Camera Module </h3>

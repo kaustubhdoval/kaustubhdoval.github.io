@@ -30,7 +30,7 @@ export const SpotifyPlayer = () => {
           <br />
           <img
             className={styles.imageFr}
-            src={getImageUrl("projectAssets/spotify.jpg")}
+            src={getImageUrl("projectAssets/spotify.webp")}
             alt=""
           />
           <h3 className={styles.caption}> Project built on a protoboard </h3>

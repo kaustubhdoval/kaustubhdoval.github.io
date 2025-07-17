@@ -32,14 +32,14 @@ export const SmartSwitchBoard = () => {
           <br />
           <img
             className={styles.imageFr}
-            src={getImageUrl("projectAssets/switch-3d.png")}
+            src={getImageUrl("projectAssets/switch-3d.webp")}
             alt=""
           />
           <h3 className={styles.caption}> CAD Visualization </h3>
           <br />
           <img
             className={styles.imageFr}
-            src={getImageUrl("projectAssets/switch-pcb.png")}
+            src={getImageUrl("projectAssets/switch-pcb.webp")}
             alt=""
           />
           <h3 className={styles.caption}> PCB Design of the Board </h3>

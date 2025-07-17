@@ -36,7 +36,7 @@ export const Projects = ({ header = "Projects", onlyFavs = true }) => {
         inWebsite="true"
       ></ProjectColumn>
       <ProjectColumn
-        projectName="Smart Switch Board"
+        projectName="Smart Switch Board PCB"
         description="An ESP32 based device which uses 3 relays and an array of sensors to make a truly smart switch board"
         btnName="Learn More"
         btnLink="smart-switch"
@@ -54,7 +54,7 @@ export const Projects = ({ header = "Projects", onlyFavs = true }) => {
             color="#571367"
           ></ProjectColumn>
           <ProjectColumn
-            projectName="Voltage Regulator"
+            projectName="Voltage Regulator PCB"
             description="Designed a Low Droupout Voltage Regulator using Altium Designer"
             btnName="Learn More"
             btnLink="voltage-regulator"
